@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="472" viewBox="0 0 880 472" font-family="ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<pattern id="d" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.1" fill="#1c2029"/></pattern>
+<radialGradient id="g" cx="80%" cy="35%" r="60%"><stop offset="0" stop-color="#d97757" stop-opacity="0.16"/><stop offset="1" stop-color="#d97757" stop-opacity="0"/></radialGradient>
+<clipPath id="c"><rect width="880" height="472" rx="20"/></clipPath></defs>
+<g clip-path="url(#c)"><rect width="880" height="472" fill="#0c0e13"/><rect width="880" height="472" fill="url(#d)"/><rect width="880" height="472" fill="url(#g)"/></g>
+<rect x=".5" y=".5" width="879" height="471" rx="19.5" fill="none" stroke="#262a34"/>
+<g transform="translate(0 21)"><rect x="48" y="44" width="178" height="24" rx="12" fill="none" stroke="#262a34"/><circle cx="62" cy="56" r="4" fill="#d97757"/><text x="72" y="60.5" font-size="11.5" font-weight="600" fill="#8b91a3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">CLAUDE CODE SKILL PACK</text>
+<text x="46" y="116" font-size="38" font-weight="800" fill="#f2f3f7" letter-spacing="-1.4">hustle-design-kit</text>
+<text x="48" y="146" font-size="16" fill="#8b91a3">The skills a working designer actually uses.</text>
+<text x="48" y="168" font-size="16" fill="#8b91a3">One install.</text>
+<rect x="48" y="196" width="332" height="44" rx="10" fill="#161a22" stroke="#262a34"/><text x="64" y="223" font-size="13" fill="#d97757" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">$</text><text x="80" y="223" font-size="13" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">./install.sh</text><text x="364" y="223" font-size="11" fill="#5b6172" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" text-anchor="end">mac · linux · npx</text>
+<line x1="48" y1="266" x2="380" y2="266" stroke="#262a34"/>
+<text x="48" y="296" font-size="20" font-weight="700" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">20</text><text x="48" y="313" font-size="11" fill="#5b6172" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">skills</text>
+<text x="160" y="296" font-size="20" font-weight="700" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">10</text><text x="160" y="313" font-size="11" fill="#5b6172" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">authors</text>
+<text x="272" y="296" font-size="20" font-weight="700" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">4</text><text x="272" y="313" font-size="11" fill="#5b6172" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">groups</text>
+</g><rect x="430" y="40" width="410" height="118" rx="12" fill="#161a22" stroke="#d97757" stroke-opacity="0.7"/>
+<text x="444" y="62" font-size="10.5" font-weight="700" fill="#d97757" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" letter-spacing=".6">DESIGN</text><text x="826" y="62" font-size="10.5" fill="#5b6172" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" text-anchor="end">10</text>
+<rect x="444" y="72" width="86" height="20" rx="6" fill="#1e222c" stroke="#262a34"/><text x="454" y="86" font-size="11" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">impeccable</text>
+<rect x="536" y="72" width="119" height="20" rx="6" fill="#1e222c" stroke="#262a34"/><text x="546" y="86" font-size="11" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">emil-design-eng</text>
+<rect x="661" y="72" width="99" height="20" rx="6" fill="#1e222c" stroke="#262a34"/><text x="671" y="86" font-size="11" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">design-taste</text>
+<rect x="444" y="98" width="106" height="20" rx="6" fill="#1e222c" stroke="#262a34"/><text x="454" y="112" font-size="11" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">ui-ux-pro-max</text>
+<rect x="556" y="98" width="73" height="20" rx="6" fill="#1e222c" stroke="#262a34"/><text x="566" y="112" font-size="11" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">genjutsu</text>
+<rect x="635" y="98" width="99" height="20" rx="6" fill="#1e222c" stroke="#262a34"/><text x="645" y="112" font-size="11" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">apple-design</text>
+<rect x="740" y="98" width="73" height="20" rx="6" fill="#1e222c" stroke="#262a34"/><text x="750" y="112" font-size="11" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">break-ui</text>
+<rect x="444" y="124" width="106" height="20" rx="6" fill="#1e222c" stroke="#262a34"/><text x="454" y="138" font-size="11" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">mobile-native</text>
+<rect x="430" y="166" width="410" height="92" rx="12" fill="#161a22" stroke="#262a34" stroke-opacity="1"/>
+<text x="444" y="188" font-size="10.5" font-weight="700" fill="#8b91a3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" letter-spacing=".6">MOTION</text><text x="826" y="188" font-size="10.5" fill="#5b6172" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" text-anchor="end">4</text>
+<rect x="444" y="198" width="66" height="20" rx="6" fill="#1e222c" stroke="#262a34"/><text x="454" y="212" font-size="11" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">animate</text>
+<rect x="516" y="198" width="132" height="20" rx="6" fill="#1e222c" stroke="#262a34"/><text x="526" y="212" font-size="11" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">review-animations</text>
+<rect x="654" y="198" width="106" height="20" rx="6" fill="#1e222c" stroke="#262a34"/><text x="664" y="212" font-size="11" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">motion-design</text>
+<rect x="444" y="224" width="79" height="20" rx="6" fill="#1e222c" stroke="#262a34"/><text x="454" y="238" font-size="11" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">gsap-core</text>
+<rect x="430" y="266" width="410" height="92" rx="12" fill="#161a22" stroke="#262a34" stroke-opacity="1"/>
+<text x="444" y="288" font-size="10.5" font-weight="700" fill="#8b91a3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" letter-spacing=".6">REFERENCE</text><text x="826" y="288" font-size="10.5" fill="#5b6172" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" text-anchor="end">4</text>
+<rect x="444" y="298" width="106" height="20" rx="6" fill="#1e222c" stroke="#262a34"/><text x="454" y="312" font-size="11" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">replica-recon</text>
+<rect x="556" y="298" width="112" height="20" rx="6" fill="#1e222c" stroke="#262a34"/><text x="566" y="312" font-size="11" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">replica-design</text>
+<rect x="674" y="298" width="99" height="20" rx="6" fill="#1e222c" stroke="#262a34"/><text x="684" y="312" font-size="11" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">replica-diff</text>
+<rect x="444" y="324" width="152" height="20" rx="6" fill="#1e222c" stroke="#262a34"/><text x="454" y="338" font-size="11" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">replica-entrepreneur</text>
+<rect x="430" y="366" width="410" height="66" rx="12" fill="#161a22" stroke="#262a34" stroke-opacity="1"/>
+<text x="444" y="388" font-size="10.5" font-weight="700" fill="#8b91a3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" letter-spacing=".6">TOKEN SAVER</text><text x="826" y="388" font-size="10.5" fill="#5b6172" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" text-anchor="end">2</text>
+<rect x="444" y="398" width="112" height="20" rx="6" fill="#1e222c" stroke="#262a34"/><text x="454" y="412" font-size="11" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">slim-claude-md</text>
+<rect x="562" y="398" width="66" height="20" rx="6" fill="#1e222c" stroke="#262a34"/><text x="572" y="412" font-size="11" fill="#f2f3f7" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">caveman</text>
+</svg>
