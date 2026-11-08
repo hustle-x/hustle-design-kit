@@ -76,11 +76,7 @@ Install the skill pack from https://github.com/hustle-x/hustle-design-kit
 Nothing is copied into this repository. The installer asks [`npx skills`](https://www.npmjs.com/package/skills) to fetch each skill from its author, so you get their latest version and they keep the credit.
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/how-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="docs/how-light.svg">
-    <img src="docs/how-light.svg" alt="1. run ./install.sh, 2. each skill is fetched from its author's repository, 3. twenty skills are ready and load only when needed" width="820">
-  </picture>
+  <img src="docs/kit-how.svg" alt="1. run ./install.sh, 2. each skill is fetched from its author's repository, 3. twenty skills are ready and load only when needed" width="880">
 </p>
 
 ---
