@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/skills-20-d97757?style=for-the-badge" alt="20 skills">
   <img src="https://img.shields.io/badge/authors-10-555?style=for-the-badge" alt="10 authors">
   <img src="https://img.shields.io/badge/groups-design_·_motion_·_reference_·_tokens-555?style=for-the-badge" alt="4 groups">
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/hustle-x/hustle-design-kit?style=for-the-badge&color=green" alt="License"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-use--only-c0392b?style=for-the-badge" alt="License: use only, all rights reserved"></a>
 </p>
 
 <p align="center">
@@ -202,7 +202,7 @@ The installer targets Claude Code. `npx skills` also supports other agents: in t
 
 ## Credits
 
-Every skill belongs to its author and is installed from their repository. This kit contains only the installer, this README and `CLAUDE.example.md`.
+Every skill belongs to its author and is installed from their repository. This kit contains only the installer, this README, the images and `CLAUDE.example.md`.
 
 | Repository | Author | License |
 |:--|:--|:--|
@@ -216,7 +216,7 @@ Every skill belongs to its author and is installed from their repository. This k
 | [Jakeschincariol/replica-skill](https://github.com/Jakeschincariol/replica-skill) | Jake Schincariol | MIT |
 | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | Julius Brussee | Apache-2.0 |
 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | Graphify Labs | Apache-2.0 |
-| [hustle-x/slim-claude-md](https://github.com/hustle-x/slim-claude-md) | hustle-x | MIT |
+| [hustle-x/slim-claude-md](https://github.com/hustle-x/slim-claude-md) | hustle-x | Use-only (all rights reserved) |
 
 The rules in `CLAUDE.example.md` are our own wording of Andrej Karpathy's observations on LLM coding mistakes, as collected in [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills).
 
@@ -258,5 +258,8 @@ Open an issue with the link and what you use it for in real work.
 
 ## License
 
-The installer, this README and `CLAUDE.example.md` are [MIT](LICENSE). Each skill keeps its own license, listed in [Credits](#credits).
+**All rights reserved.** The installer, this README, the images and `CLAUDE.example.md` are free to use, for personal or commercial work. You may **not** copy, modify, remake, redistribute or sell them, or use them to build a competing skill pack, without written permission from hustle-x.
 
+The skills the kit installs belong to their authors and keep their own licenses, listed in [Credits](#credits).
+
+Full terms: [LICENSE](LICENSE) (hustle-x Use-Only License 1.0). To ask for permission, [open an issue](https://github.com/hustle-x/hustle-design-kit/issues).
