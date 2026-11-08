@@ -18,11 +18,7 @@
 The Claude Code skills a working designer actually uses, picked from daily client work on websites, apps and motion. One command installs all twenty, straight from the people who wrote them.
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/banner-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="docs/banner-light.svg">
-    <img src="docs/banner-light.svg" alt="Hustle Design Kit: 20 skills in four groups" width="820">
-  </picture>
+  <img src="docs/kit-hero.svg" alt="hustle-design-kit: twenty Claude Code skills in four groups, one install" width="880">
 </p>
 
 <p align="center">
