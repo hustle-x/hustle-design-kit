@@ -79,29 +79,13 @@ Install the skill pack from https://github.com/hustle-x/hustle-design-kit
 
 Nothing is copied into this repository. The installer asks [`npx skills`](https://www.npmjs.com/package/skills) to fetch each skill from its author, so you get their latest version and they keep the credit.
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  1. YOU RUN                                                     │
-│     ./install.sh            (or pick groups: design motion ...) │
-└─────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│  2. ONE FETCH PER AUTHOR (10 repositories)                      │
-│     pbakaus/impeccable          emilkowalski/skills             │
-│     Leonxlnx/taste-skill        nextlevelbuilder/ui-ux-pro-max  │
-│     AThevon/genjutsu            LottieFiles/motion-design       │
-│     greensock/gsap-skills       Jakeschincariol/replica-skill   │
-│     hustle-x/slim-claude-md     JuliusBrussee/caveman           │
-└─────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
-│  3. 20 SKILLS IN ~/.claude/skills                               │
-│     Claude sees a one-line description of each and loads the    │
-│     full skill only when your task needs it.                    │
-└─────────────────────────────────────────────────────────────────┘
-```
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/how-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="docs/how-light.svg">
+    <img src="docs/how-light.svg" alt="1. run ./install.sh, 2. each skill is fetched from its author's repository, 3. twenty skills are ready and load only when needed" width="820">
+  </picture>
+</p>
 
 ---
 
@@ -160,42 +144,51 @@ For "make it like this". Clean-room: features and flows from public pages and yo
 
 ## Which Skill When
 
-Several design skills overlap on purpose. This is how we pick:
+Some design skills overlap on purpose. Start from what you want to do:
 
-```
-┌──────────────────────────────────────┬──────────────────────────────────────┐
-│  YOU WANT TO                         │  USE                                 │
-├──────────────────────────────────────┼──────────────────────────────────────┤
-│  Fix or polish an existing screen    │  impeccable                          │
-│  Get the small details right         │  emil-design-eng                     │
-│  Design a landing page / site        │  design-taste-frontend               │
-│  Pick a style, palette or font fast  │  ui-ux-pro-max                       │
-│  Add motion with wow                 │  cast                                │
-│  Build a whole visual identity       │  paint                               │
-│  Build a whole site from material    │  bunshin                             │
-│  Make or review an animation         │  animate · review-animations         │
-│  Use GSAP correctly                  │  gsap-core                           │
-│  Check a screen with ugly data       │  break-ui                            │
-│  Make a web app feel native on phone │  mobile-native                       │
-│  Rebuild what a client pointed at    │  replica-recon → design → diff       │
-│  Find gaps in a competitor           │  replica-entrepreneur                │
-│  Shrink a CLAUDE.md that grew huge   │  slim-claude-md                      │
-│  Shorter answers                     │  caveman                             │
-└──────────────────────────────────────┴──────────────────────────────────────┘
-```
+**Screens and sites**
+
+| I want to... | Use |
+|:--|:--|
+| Fix or polish a screen that already exists | `impeccable` |
+| Get the small details right: spacing, states, feel | `emil-design-eng` |
+| Design a landing page or marketing site | `design-taste-frontend` |
+| Pick a style, palette or font pair fast | `ui-ux-pro-max` |
+| Build a whole visual identity | `paint` |
+| Build a whole site from real material | `bunshin` |
+| See what breaks with long names and empty states | `break-ui` |
+| Make a web app feel native on a phone | `mobile-native` |
+
+**Motion**
+
+| I want to... | Use |
+|:--|:--|
+| Add motion and micro-interactions with wow | `cast` |
+| Build one animation properly | `animate` |
+| Get feedback on motion I already made | `review-animations` |
+| Use GSAP the right way | `gsap-core` |
+
+**References and tokens**
+
+| I want to... | Use |
+|:--|:--|
+| Rebuild something a client pointed at | `replica-recon`, then `replica-design` and `replica-diff` |
+| Find what users hate about a competitor | `replica-entrepreneur` |
+| Shrink a CLAUDE.md that grew huge | `slim-claude-md` |
+| Get shorter answers | `caveman` |
 
 ---
 
 ## Usage
 
-Just describe the task. Claude picks the skill from its description, or call one by name with a slash.
+Just describe the task. Claude picks the right skill from its description, or you can call one by name with a slash.
 
-```
-Polish the pricing page, it feels cramped.          → impeccable
-/cast add a satisfying hover and press to the cards → cast
-The client wants it "like this site": <url>         → replica-recon
-My CLAUDE.md is 180 KB, slim it                     → slim-claude-md
-```
+| You type | Skill that runs |
+|:--|:--|
+| *"Polish the pricing page, it feels cramped."* | `impeccable` |
+| *"/cast add a satisfying hover and press to the cards"* | `cast` |
+| *"The client wants it like this site: &lt;url&gt;"* | `replica-recon` |
+| *"My CLAUDE.md is 180 KB, slim it."* | `slim-claude-md` |
 
 ### Install options
 
@@ -275,11 +268,3 @@ Open an issue with the link and what you use it for in real work.
 
 The installer, this README and `CLAUDE.example.md` are [MIT](LICENSE). Each skill keeps its own license, listed in [Credits](#credits).
 
-<p align="center">
-  <a href="https://star-history.com/#hustle-x/hustle-design-kit&Date">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=hustle-x/hustle-design-kit&type=Date&theme=dark">
-      <img src="https://api.star-history.com/svg?repos=hustle-x/hustle-design-kit&type=Date" alt="Star history" width="600">
-    </picture>
-  </a>
-</p>
