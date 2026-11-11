@@ -130,6 +130,7 @@ For "make it like this". Clean-room: features and flows from public pages and yo
 | | |
 |:--|:--|
 | **graphify** (optional) | Turns a codebase into a knowledge graph so the agent reads less. Needs its own CLI, so it is left out of the default install. Add it with `./install.sh all`. [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) |
+| **rtk** (optional) | Shrinks what commands print (tests, git, builds) before Claude reads it: the third token saver, next to `caveman` (shorter answers) and `slim-claude-md` (a smaller CLAUDE.md). It is a program plus a hook in your global Claude Code settings, not a skill, so it is left out of the default install. Add it with `./install.sh rtk`. [rtk-ai/rtk](https://github.com/rtk-ai/rtk) |
 | **[CLAUDE.example.md](CLAUDE.example.md)** | Four working rules to paste into your CLAUDE.md: think first, keep it simple, change only what was asked, prove it works. |
 
 ---
@@ -168,6 +169,7 @@ Some design skills overlap on purpose. Start from what you want to do:
 | Find what users hate about a competitor | `replica-entrepreneur` |
 | Shrink a CLAUDE.md that grew huge | `slim-claude-md` |
 | Get shorter answers | `caveman` |
+| Make test, git and build output smaller | `rtk` (optional) |
 
 ---
 
@@ -188,11 +190,14 @@ Just describe the task. Claude picks the right skill from its description, or yo
 |:--|:--|
 | `./install.sh` | design, motion, reference, tokens (20 skills) |
 | `./install.sh design motion` | only the groups you name |
-| `./install.sh all` | everything, graphify included |
+| `./install.sh all` | everything, graphify and rtk included |
+| `./install.sh rtk` | only rtk: installs it (Homebrew, winget or its script) and runs `rtk init -g` |
 | `./install.sh --project design` | into this project's `.claude/skills` instead of globally |
 | `./install.sh --list` | shows what each group installs, installs nothing |
 
 Update later with `npx skills update -g`, remove one with `npx skills remove <name> -g`.
+
+To remove rtk: delete the `@RTK.md` line from `~/.claude/CLAUDE.md`, restore `~/.claude/settings.json` from the backup `rtk init` left next to it, then uninstall it (`brew uninstall rtk` or `winget uninstall rtk-ai.rtk`).
 
 ### Supported agents
 
@@ -216,6 +221,7 @@ Every skill belongs to its author and is installed from their repository. This k
 | [Jakeschincariol/replica-skill](https://github.com/Jakeschincariol/replica-skill) | Jake Schincariol | MIT |
 | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | Julius Brussee | Apache-2.0 |
 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | Graphify Labs | Apache-2.0 |
+| [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | rtk-ai | Apache-2.0 and BUSL-1.1 |
 | [hustle-x/slim-claude-md](https://github.com/hustle-x/slim-claude-md) | hustle-x | Use-only (all rights reserved) |
 
 The rules in `CLAUDE.example.md` are our own wording of Andrej Karpathy's observations on LLM coding mistakes, as collected in [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills).
@@ -239,7 +245,7 @@ One big skill would load everything every time it is used. Separate skills load 
 <details>
 <summary><b>Is the installer safe?</b></summary>
 
-It only runs `npx skills add` for the repositories listed above; read [`install.sh`](install.sh), it is short. Skills run with your agent's permissions, so read a skill before you rely on it, like any code from the internet.
+It only runs `npx skills add` for the repositories listed above, and, if you ask for rtk, its official install and `rtk init -g`; read [`install.sh`](install.sh), it is short. Skills run with your agent's permissions, so read a skill before you rely on it, like any code from the internet.
 </details>
 
 <details>

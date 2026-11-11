@@ -5,7 +5,8 @@
 #
 #   ./install.sh                     design + motion + reference + tokens
 #   ./install.sh design motion       only those groups
-#   ./install.sh all                 everything, graphify included
+#   ./install.sh all                 everything, graphify and rtk included
+#   ./install.sh rtk                 rtk only: smaller command output (a CLI and a hook)
 #   ./install.sh --project ...       install into this project instead of globally
 #   ./install.sh --list              show the groups and skills, install nothing
 set -euo pipefail
@@ -22,7 +23,7 @@ for a in "$@"; do
   esac
 done
 [ ${#PICK[@]} -eq 0 ] && PICK=(design motion reference tokens)
-[ "${PICK[0]}" = "all" ] && PICK=(design motion reference tokens graphify)
+[ "${PICK[0]}" = "all" ] && PICK=(design motion reference tokens graphify rtk)
 
 # group | repository | skills (comma separated)
 SOURCES='
@@ -47,10 +48,37 @@ if [ $LIST -eq 1 ]; then
     [ -z "$g" ] && continue
     printf "  %-10s %-38s %s\n" "$g" "$repo" "$skills"
   done
+  printf "  %-10s %-38s %s\n" rtk rtk-ai/rtk "the rtk CLI and its Claude Code hook (optional)"
   exit 0
 fi
 
-command -v npx >/dev/null || { echo "npx not found. Install Node.js 18+ from https://nodejs.org and run again."; exit 1; }
+# rtk is a program, not a skill: installed with the system's package
+# manager, then hooked into Claude Code's global settings.
+install_rtk() {
+  echo "→ rtk-ai/rtk  (CLI + Claude Code hook)"
+  if ! rtk gain >/dev/null 2>&1; then
+    case "${OSTYPE:-}" in
+      msys*|cygwin*|win32*) winget install -e --id rtk-ai.rtk >/dev/null 2>&1 ;;
+      *) if command -v brew >/dev/null; then brew install rtk >/dev/null 2>&1
+         else curl -fsSL https://raw.githubusercontent.com/rtk-ai/rtk/refs/heads/master/install.sh | sh >/dev/null 2>&1; fi ;;
+    esac
+  fi
+  # `rtk gain` tells it from the other program named rtk on crates.io.
+  if ! rtk gain >/dev/null 2>&1; then
+    echo "  ✗ rtk didn't install. See https://github.com/rtk-ai/rtk#install--forget"
+    return 1
+  fi
+  if rtk init -g --auto-patch </dev/null >/dev/null 2>&1; then
+    echo "  ✓ hooked into Claude Code (~/.claude/settings.json, backup next to it). Savings: rtk gain"
+  else
+    echo "  ✗ rtk is installed but its hook isn't. Run: rtk init -g"
+    return 1
+  fi
+}
+
+skills=0
+for g in "${PICK[@]}"; do [ "$g" != rtk ] && skills=1; done
+[ $skills -eq 0 ] || command -v npx >/dev/null || { echo "npx not found. Install Node.js 18+ from https://nodejs.org and run again."; exit 1; }
 
 ok=0; fail=0
 while IFS='|' read -r g repo skills; do
@@ -66,9 +94,17 @@ while IFS='|' read -r g repo skills; do
   fi
 done <<< "$SOURCES"
 
+if want rtk; then
+  if install_rtk; then ok=$((ok+1)); else fail=$((fail+1)); fi
+fi
+
 echo
 echo "Done: $ok source(s) installed, $fail failed. Groups: ${PICK[*]}"
 if want graphify; then
   echo "graphify also needs its command-line tool: see https://github.com/Graphify-Labs/graphify"
 fi
-echo "Restart Claude Code (or start a new session) to load the skills."
+if want rtk; then
+  echo "Restart Claude Code (or start a new session) to load the skills and the rtk hook."
+else
+  echo "Restart Claude Code (or start a new session) to load the skills."
+fi
